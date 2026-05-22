@@ -219,11 +219,7 @@ function AdminLoginModal({ correctPassword, onSuccess, onCancel }) {
         <input type="password" value={pw} onChange={e=>{setPw(e.target.value);setErr("");}} onKeyDown={e=>e.key==='Enter'&&submit()} placeholder="비밀번호 입력" autoFocus style={{...S.mInput,textAlign:'center',letterSpacing:4}} />
         {err&&<div style={{color:'#e53935',fontSize:13,marginBottom:10,textAlign:'center'}}>⚠️ {err}</div>}
         <div style={{display:'flex',gap:10}}>
-<<<<<<< HEAD
           <button onClick={onCancel} style={{flex:1,height:46,borderRadius:23,border:'1.5px solid #ddd',background:'#f5f5f5',fontSize:15,fontWeight:700,cursor:'pointer',color:'#333'}}>취소</button>
-=======
-          <button onClick={onCancel} style={{flex:1,height:46,borderRadius:23,border:'1.5px solid #ddd',background:'none',fontSize:15,fontWeight:700,cursor:'pointer'}}>취소</button>
->>>>>>> e37a60d2f7bed01aa360b60193226ac51ee4d75f
           <button onClick={submit} style={{flex:1,height:46,borderRadius:23,border:'none',background:P,color:'#fff',fontSize:15,fontWeight:700,cursor:'pointer'}}>확인</button>
         </div>
       </div>
@@ -911,11 +907,7 @@ function PwChangeSection({ currentPw, onSave }) {
       <input type="password" value={nw} onChange={e=>setNw(e.target.value)} placeholder="새 비밀번호 (4자 이상)" style={S.input} />
       <input type="password" value={nw2} onChange={e=>setNw2(e.target.value)} placeholder="새 비밀번호 확인" style={{...S.input,marginBottom:10}} onKeyDown={e=>e.key==='Enter'&&submit()} />
       {msg&&<div style={{fontSize:13,color:msg.ok?'#2e7d32':'#e53935',marginBottom:8}}>{msg.text}</div>}
-<<<<<<< HEAD
       <button onClick={submit} style={{width:'100%',height:42,borderRadius:21,border:'none',background:'#444',color:'#fff',fontSize:14,fontWeight:700,cursor:'pointer'}}>비밀번호 변경</button>
-=======
-      <button onClick={submit} style={{width:'100%',height:42,borderRadius:21,border:'none',background:'#333',color:'#fff',fontSize:14,fontWeight:700,cursor:'pointer'}}>비밀번호 변경</button>
->>>>>>> e37a60d2f7bed01aa360b60193226ac51ee4d75f
     </div>
   );
 }
